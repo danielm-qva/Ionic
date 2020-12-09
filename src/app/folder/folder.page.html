@@ -1,0 +1,59 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar class="top1">
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="marlehf">Grade {{ name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item color="primary">
+  <ion-label>Semestre 1</ion-label>
+</ion-item>
+
+<ion-content padding >
+  <ion-grid >
+
+    <ion-row>
+      <ion-col size="12">
+     <ion-list>
+      <ion-item *ngFor = "let i of list; let p = index">
+         <ion-label (click) ="lanzar(i.description)"  >Week {{p+1}}</ion-label>
+         <ion-label (click) ="lanzar(i.description)" >{{i.topic}}</ion-label>
+      </ion-item>
+     </ion-list>
+
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-item color="primary">
+  <ion-label>Semestre 2</ion-label>
+</ion-item>
+
+<ion-content padding >
+  <ion-grid >
+
+    <ion-row>
+      <ion-col size="12">
+     <ion-list>
+      <ion-item *ngFor = "let i of list; let p = index">
+         <ion-label (click) ="lanzar(i.description)"  >Week {{p+1}}</ion-label>
+         <ion-label (click) ="lanzar(i.description)" >{{i.topic}}</ion-label>
+      </ion-item>
+     </ion-list>
+
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>
+
+
+
